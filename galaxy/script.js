@@ -612,9 +612,11 @@ scene.add(planet);
 // ---- TẠO CÁC VÒNG CHỮ QUAY QUANH HÀNH TINH ----
 const ringTexts = [
   'Together',
-  "Văn Song💖",
+  
   "Thu Hoài",
-    ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
+  "💖",
+  "Văn Song",
+  ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
 function createTextRings() {
@@ -818,7 +820,7 @@ let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
   const audioSources = [
-   ""
+   "music.mp3"
   ];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
