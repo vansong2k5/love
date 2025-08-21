@@ -84,7 +84,7 @@ const galaxyParameters = {
   outsideColor: new THREE.Color(0x48b8b8),
 };
 
-const defaultHeartImages = Array.from({ length: 21 }, (_, i) => `images/img${i + 1}.jpg`);
+const defaultHeartImages = Array.from({ length: 25 }, (_, i) => `images/img${i + 1}.jpg`);
 
 const heartImages = [
   ...(window.dataCCD?.data?.heartImages || []),
@@ -614,7 +614,7 @@ const ringTexts = [
   'Together',
   
   "Thu Hoài",
-  "💖",
+  "❤️",
   "Văn Song",
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
